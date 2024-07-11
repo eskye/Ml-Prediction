@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  nextpurchaseprediction:
+    image: ${DOCKER_REGISTRY-}nextpurchaseprediction
+    build:
+      context: .
+      dockerfile: NextPurchasePrediction/Dockerfile

@@ -1,5 +1,6 @@
 using Microsoft.ML;
 using Microsoft.ML.Transforms.TimeSeries;
+using System;
 
 namespace NextPurchasePrediction.Services;
 
@@ -16,17 +17,15 @@ public class PredictionService : IPredictionService
     public PredictionService()
     {
         _mlContext = new MLContext();
-        _purchaseDates = new List<DateTime>
-        {
-            new DateTime(2024, 3, 16),
-            new DateTime(2024, 4, 20),
-            new DateTime(2024, 5, 23),
-            new DateTime(2024, 6, 18),
-            new DateTime(2024, 7, 01),
-            new DateTime(2024, 5, 20),
-            new DateTime(2024, 2, 18),
-            new DateTime(2024, 3, 18),
-        };
+        DateTime startDate = new DateTime(2024, 1, 1);
+        DateTime endDate = DateTime.Today;
+
+        // Calculate the total number of days between the two dates
+        int totalDays = (endDate - startDate).Days;
+        Random random = new Random();
+        _purchaseDates = Enumerable.Range(0, 100)
+                                    .Select(_ => startDate.AddDays(random.Next(0, totalDays + 1)))
+                                    .ToList();
     }
     public Task<string> PredictPM()
     { 
@@ -80,6 +79,7 @@ public class PredictionService : IPredictionService
         return Task.FromResult($"The next predicted purchase date is:  {nextPurchaseDate.ToString("yyyy-MM-dd")}");
 
     }
+
     
 }
 

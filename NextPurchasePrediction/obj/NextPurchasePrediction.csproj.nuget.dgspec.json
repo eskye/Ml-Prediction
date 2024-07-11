@@ -1,30 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/devsunkanmi/Dev/learning/DSA/ML/NextPurchasePrediction/NextPurchasePrediction/NextPurchasePrediction.csproj": {}
+    "C:\\Workspace\\Playground\\Ml-Prediction\\NextPurchasePrediction\\NextPurchasePrediction.csproj": {}
   },
   "projects": {
-    "/Users/devsunkanmi/Dev/learning/DSA/ML/NextPurchasePrediction/NextPurchasePrediction/NextPurchasePrediction.csproj": {
+    "C:\\Workspace\\Playground\\Ml-Prediction\\NextPurchasePrediction\\NextPurchasePrediction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/devsunkanmi/Dev/learning/DSA/ML/NextPurchasePrediction/NextPurchasePrediction/NextPurchasePrediction.csproj",
+        "projectUniqueName": "C:\\Workspace\\Playground\\Ml-Prediction\\NextPurchasePrediction\\NextPurchasePrediction.csproj",
         "projectName": "NextPurchasePrediction",
-        "projectPath": "/Users/devsunkanmi/Dev/learning/DSA/ML/NextPurchasePrediction/NextPurchasePrediction/NextPurchasePrediction.csproj",
-        "packagesPath": "/Users/devsunkanmi/.nuget/packages/",
-        "outputPath": "/Users/devsunkanmi/Dev/learning/DSA/ML/NextPurchasePrediction/NextPurchasePrediction/obj/",
+        "projectPath": "C:\\Workspace\\Playground\\Ml-Prediction\\NextPurchasePrediction\\NextPurchasePrediction.csproj",
+        "packagesPath": "C:\\Users\\sunka\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\Playground\\Ml-Prediction\\NextPurchasePrediction\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/devsunkanmi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sunka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -35,20 +37,28 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "MKL.NET": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "MKL.NET.linux-x64": {
+              "target": "Package",
+              "version": "[2022.0.1.117, )"
+            },
             "Microsoft.ML": {
               "target": "Package",
               "version": "[3.0.1, )"
             },
-            "Microsoft.ML.AutoML": {
-              "target": "Package",
-              "version": "[0.21.1, )"
-            },
             "Microsoft.ML.TimeSeries": {
               "target": "Package",
               "version": "[3.0.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -74,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
