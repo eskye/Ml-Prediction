@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>c89f9bda-6130-4995-88c0-d3b6a4471fc9</ProjectGuid>
+    <ProjectGuid>2c321e21-b793-4fed-b836-4adc53224350</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>nextpurchaseprediction</DockerServiceName>
